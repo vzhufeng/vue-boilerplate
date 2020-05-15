@@ -1,0 +1,47 @@
+{
+  "name": "test-publish",
+  "version": "1.0.0",
+  "description": "测试发布平台",
+  "main": "index.js",
+  "port": "8008",
+  "scripts": {
+    "dll": "webpack --config ./webpack-config/dll.js",
+    "dev": "node ./webpack-config/dev.js",
+    "build": "webpack --config ./webpack-config/dll.js && node ./webpack-config/prod.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies":{
+    "vue": "2.5.0",
+    "vue-template-compiler": "2.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.0.0",
+	"@babel/plugin-proposal-class-properties": "7.0.0",
+    "@babel/preset-env": "7.0.0",
+    "babel-loader": "8.0.0",
+    "better-opn": "2.0.0",
+    "clean-webpack-plugin": "1.0.0",
+    "css-loader": "2.1.0",
+    "connect-history-api-fallback": "1.6.0",
+    "eslint": "7.0.0",
+    "eslint-friendly-formatter": "4.0.1",
+    "eslint-loader": "4.0.2",
+    "express": "4.16.0",
+    "file-loader": "3.0.0",
+    "html-webpack-plugin": "3.2.0",
+    "less": "3.8.0",
+    "less-loader": "4.1.0",
+    "mini-css-extract-plugin": "0.5.0",
+    "optimize-css-assets-webpack-plugin": "5.0.0",
+    "style-loader": "0.23.0",
+    "vue-loader": "15.5.0",
+    "webpack": "4.29.0",
+    "webpack-cli": "3.2.0",
+    "webpack-dev-middleware": "3.7.0",
+    "webpack-hot-middleware": "2.25.0",
+    "webpack-manifest-plugin": "2.0.0",
+    "webpack-merge": "4.1.0"
+  }
+}
